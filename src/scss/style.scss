@@ -1,0 +1,27 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+//components
+@import "./components/input";
+@import "./components/card";
+@import "./components/breadcrumb";
+@import "./components/carousel";
+
+//page
+@import "./pages/home";
+@import "./pages/article";
+
+
+@import "tailwindcss/utilities";
+
+html,
+body {
+  font-family: $font-family;
+}
+
+.twk-container {
+  @apply p-2 max-w-6xl m-auto;
+}

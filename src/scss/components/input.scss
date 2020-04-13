@@ -1,0 +1,11 @@
+.twk-input {
+  @apply text-gray block m-auto mt-6 w-full;
+
+	.container {
+		@apply flex items-center justify-center border border-solid rounded text-gray appearance-none w-full overflow-hidden;
+  }
+
+  .text-error {
+		@apply h-3 mt-1 text-right block text-red italic text-xs;
+	}
+}

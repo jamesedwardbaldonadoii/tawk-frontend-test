@@ -1,0 +1,30 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "css.validate": false,
+  "scss.validate": false,
+  "editor.tabSize": 2,
+  "editor.fontSize": 12,
+  "editor.autoIndent": "full",
+  "workbench.editor.highlightModifiedTabs": true,
+  "files.autoSave": "afterDelay",
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "prettier.singleQuote": true,
+  "prettier.bracketSpacing": true,
+  "prettier.tabWidth": 2,
+  "prettier.semi": false,
+  "prettier.useTabs": false,
+  "prettier.vueIndentScriptAndStyle": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "git.ignoreLimitWarning": true
+}

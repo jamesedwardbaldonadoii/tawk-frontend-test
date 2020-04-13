@@ -1,0 +1,53 @@
+.twk-card {
+    @apply px-12 py-12 w-full mx-1 rounded bg-white border border-solid border-gray-3;
+}
+
+.card-space {
+  &:not(.next-card) {
+    &.in-left {
+      padding-left: theme('spacing.8');
+    }
+
+    &.in-bottom {
+      padding-top: theme('spacing.8');
+    }
+  }
+
+  &.next-card {
+    + .card-space {
+
+      &.in-left {
+        padding-left: theme('spacing.8');
+      }
+
+      &.in-bottom {
+        padding-top: theme('spacing.8');
+      }
+    }
+  }
+}
+
+.box-space {
+  &:not(.next-card) {
+    &.in-left {
+      padding-left: theme('spacing.4');
+    }
+
+    &.in-bottom {
+      padding-top: theme('spacing.4');
+    }
+  }
+
+  &.next-card {
+    + .box-space {
+
+      &.in-left {
+        padding-left: theme('spacing.4');
+      }
+
+      &.in-bottom {
+        padding-top: theme('spacing.4');
+      }
+    }
+  }
+}

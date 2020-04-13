@@ -1,0 +1,23 @@
+
+.twk-breadcrumb {
+  ul,
+  li {
+    @apply inline-block list-none text-green text-lg align-middle;
+  }
+
+  .separator {
+    @apply mx-4 text-xl align-middle text-gray;
+  }
+
+  li {
+    @apply capitalize cursor-pointer;
+
+    &:hover {
+      color: theme('colors.green-2');
+    }
+
+    &:last-child {
+      @apply text-gray pointer-events-none cursor-auto;
+    }
+  }
+}

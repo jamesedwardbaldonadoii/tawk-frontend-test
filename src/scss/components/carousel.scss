@@ -1,0 +1,38 @@
+#slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.slide {
+  @apply text-center absolute top-0 flex items-center justify-center w-1/3;
+
+  &.left {
+    left: 0;
+  }
+
+  &.middle {
+    left: 33.33%;
+  }
+
+  &.right {
+    left: 66.66%;
+  }
+}
+
+.navigator {
+  @apply absolute items-center cursor-pointer flex justify-center text-gray text-xl rounded-full bg-white w-12 h-12;
+  top: calc(50% - 35px);
+  left: -4rem;
+  transition: transform 0.3s ease-in-out;
+
+  &.next {
+    left: auto;
+    right: -4rem;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: theme('colors.gray-3');
+  }
+}
